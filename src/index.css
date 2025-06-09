@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 *{
   margin:0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color:#333;
 }
 
@@ -40,7 +40,7 @@
   padding:20px;
 }
 
-.applicant-card{
+.tool-card{
   padding:20px;
   margin-bottom:10px;
   border-radius:20px;
@@ -48,10 +48,10 @@
   transition: 0.2s linear;
 }
 
-.applicant-card h2{
+.tool-card h2{
   color:#f1356d;
 }
 
-.applicant-card:hover{
+.tool-card:hover{
   box-shadow: 1px 3px 5px #c0b7b7;
 }

@@ -1,24 +1,27 @@
 import { useState } from 'react';
 
 const Home = () => {
-  const [applicants, setApplicants] = useState([
-    { name: 'Albert Yasin', role: 'Fullstack Developer Analyst', age: '24' },
-    { name: 'Andika Saputra', role: 'Freelance Backend Developer', age: '24' },
-    { name: 'Steve Eigha', role: 'Application Specialist Staff', age: '29' },
+  const [tools, setTools] = useState([
+    {
+      name: 'Youtube to MP3',
+      desc: 'Youtube to MP3 Downloader no ads!',
+    },
+    {
+      name: 'Image to text OCR',
+      desc: 'Scan any text from images and paste it immediately',
+    },
+    {
+      name: 'Cover letter maker',
+      desc: 'Make a cover letter for job application, send it to email or export it as a .docx',
+    },
   ]);
-
-  const hello = (name) => {
-    alert('Hello ' + name);
-  };
 
   return (
     <div className='home'>
-      {applicants.map((applicant) => (
-        <div class='applicant-card'>
-          <h2>{applicant.name}</h2>
-          <h5>
-            {applicant.role}, {applicant.age} years old
-          </h5>
+      {tools.map((tool) => (
+        <div class='tool-card'>
+          <h2>{tool.name}</h2>
+          <h5>{tool.desc}</h5>
         </div>
       ))}
     </div>
