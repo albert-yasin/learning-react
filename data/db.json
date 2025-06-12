@@ -1,0 +1,22 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "Youtube to MP3",
+      "desc": "Youtube to MP3 Downloader no ads!",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Image to text OCR",
+      "desc": "Scan any text from images and paste it immediately",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Cover letter maker",
+      "desc": "Make a cover letter for job application, send it to email or export it as a .docx",
+      "active": true
+    }
+  ]
+}

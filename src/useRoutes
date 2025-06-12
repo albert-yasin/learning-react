@@ -1,0 +1,23 @@
+import { useRoutes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import ProductDetail from './components/ProductDetail';
+
+function AppRoutes() {
+  let element = useRoutes([
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+    { path: "/products/:id", element: <ProductDetail /> },
+    {
+      path: "/dashboard",
+      element: <DashboardLayout />, // Parent layout component
+      children: [ // Nested routes as children array
+        { index: true, element: <DashboardOverview /> },
+        { path: "profile", element: <ProfileSettings /> },
+      ],
+    },
+    { path: "*", element: <NotFound /> }, // Wildcard route
+  ]);
+
+  return element; // Render the element returned by useRoutes
+}
